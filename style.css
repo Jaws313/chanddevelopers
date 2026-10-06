@@ -977,6 +977,153 @@ footer p {
     gap: 18px;
     justify-content: center;
     margin-top: 15px;
+}/* =========================
+   NEW FOOTER
+========================= */
+
+.footer {
+    background: #0d3042;
+    color: #cfcfcf;
+    text-align: center;
+    padding: 55px 25px 35px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.footer-links a {
+    color: #d6d6d6;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d2ad5c;
+}
+
+.footer-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin: 60px 0;
+}
+
+.social-section h2 {
+    color: #d2ad5c;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+.social-line {
+    width: 130px;
+    height: 4px;
+    background: #d2ad5c;
+    margin: 35px auto 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.social {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social span {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.youtube span {
+    font-size: 42px;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.facebook span {
+    font-family: Arial, sans-serif;
+    font-size: 55px;
+}
+
+.social:hover {
+    transform: translateY(-6px);
+}
+
+.copyright {
+    font-size: 21px;
+    margin: 0 0 30px;
+    color: #aaa;
+}
+
+.footer-bottom {
+    font-size: 17px;
+    color: #777;
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 20px 30px;
+    }
+
+    .footer-links a {
+        font-size: 20px;
+    }
+
+    .social-section h2 {
+        font-size: 34px;
+    }
+
+    .social-icons {
+        gap: 28px;
+    }
+
+    .social {
+        width: 100px;
+        height: 100px;
+    }
+
+    .copyright {
+        font-size: 18px;
+    }
+
 }
 
 
