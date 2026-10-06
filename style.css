@@ -1050,80 +1050,95 @@ footer p {
     font-weight: bold;
 }
 
+
+/* SOCIAL MEDIA ICONS */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-top: 35px;
+}
+
+.social-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.08);
+}
+
+.social-icon span {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Instagram */
 .instagram {
     background: linear-gradient(
-        45deg,
-        #feda75,
-        #fa7e1e,
-        #d62976,
-        #962fbf,
-        #4f5bd5
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
     );
 }
 
+.instagram span {
+    font-size: 65px;
+    font-weight: normal;
+}
+
+/* YouTube */
 .youtube {
     background: #ff0000;
 }
 
 .youtube span {
-    font-size: 42px;
+    font-size: 45px;
 }
 
+/* Facebook */
 .facebook {
     background: #1877f2;
 }
 
 .facebook span {
-    font-family: Arial, sans-serif;
-    font-size: 55px;
-}
-
-.social:hover {
-    transform: translateY(-6px);
-}
-
-.copyright {
-    font-size: 21px;
-    margin: 0 0 30px;
-    color: #aaa;
-}
-
-.footer-bottom {
-    font-size: 17px;
-    color: #777;
-    margin: 0;
+    font-size: 70px;
 }
 
 
 /* MOBILE */
-
 @media (max-width: 600px) {
-
-    .footer {
-        padding: 45px 20px 30px;
-    }
-
-    .footer-links a {
-        font-size: 20px;
-    }
-
-    .social-section h2 {
-        font-size: 34px;
-    }
 
     .social-icons {
         gap: 28px;
     }
 
-    .social {
-        width: 100px;
-        height: 100px;
+    .social-icon {
+        width: 102px;
+        height: 102px;
     }
 
-    .copyright {
-        font-size: 18px;
+    .instagram span {
+        font-size: 55px;
     }
 
+    .youtube span {
+        font-size: 38px;
+    }
+
+    .facebook span {
+        font-size: 60px;
+    }
 }
-
 
